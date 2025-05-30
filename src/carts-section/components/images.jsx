@@ -8,7 +8,7 @@ export default function Image() {
 
   useEffect(() => {
     axios
-      .get("https://lumia-prisma-backend.onrender.com//api/category")
+      .get("https://lumia-prisma-backend.onrender.com/api/category")
       .then((res) => setCategories(res.data))
       .catch((err) => console.error("Error fetching categories:", err));
   }, []);
