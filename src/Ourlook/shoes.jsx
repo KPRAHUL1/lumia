@@ -1,5 +1,5 @@
 import Shoecarosal from "./components/shoecarosal";
-import Shoeheader from "./components/Shoeheader";
+import Shoeheader from "./components/shoeheader";
 import { motion } from "framer-motion";
 
 export default function Shoessection() {
