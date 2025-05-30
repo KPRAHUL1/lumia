@@ -1,4 +1,4 @@
-import Shoecarosal from "./components/Shoecarosal";
+import Shoecarosal from "./components/shoecarosal";
 import Shoeheader from "./components/Shoeheader";
 import { motion } from "framer-motion";
 
