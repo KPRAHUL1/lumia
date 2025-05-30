@@ -1,0 +1,19 @@
+ *{
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  .hover\\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  
+  img.hover-transition {
+    /* Any additional styles or changes when hovered */
+  }
+  
+  
