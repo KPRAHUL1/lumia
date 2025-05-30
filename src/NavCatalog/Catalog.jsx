@@ -2,56 +2,56 @@
 
 import {  Modal } from "flowbite-react";
 import { useState } from "react";
-
+import image from "../assets/products/cart2.1.webp"
 export function Catalog() {
   const Catalogdata = [
     {
-      image: "/Menu bar/Catalog/menu-category-06.avif",
+      image: image,
       title: "Women",
       subtitles: ["Dresses", "Activewear", "One-Pieces", "Outerwear", "Pants"],
     },
     {
-      image: "/Menu bar/Catalog/menu-category.avif",
+      image: image,
       title: "Men",
       subtitles: ["Arm Warmers & Sleeves", "Balaclavas", "Bandanas & Headties", "Accessories", "Earmuffs"],
     },
     {
-      image: "/Menu bar/Catalog/menu-category-03.avif",
+      image: image,
       title: "Teenagers",
       subtitles: ["Preppy Style", "Fitness Fashion", "Special Occasions", "Outdoor Clothing", "School Outfits"],
     },
     {
-      image: "/Menu bar/Catalog/busines-industrial.avif",
+      image: image,
       title: "Business",
       subtitles: ["Business Attire", "Formal Wear", "Accessories", "Office Supplies"],
     },
     {
-      image: "/Menu bar/Catalog/busines-industrial.avif",
+      image: image,
       title: "Business",
       subtitles: ["Business Attire", "Formal Wear", "Accessories", "Office Supplies"],
     },
     {
-      image: "/Menu bar/Catalog/busines-industrial.avif",
+      image: image,
       title: "Business",
       subtitles: ["Business Attire", "Formal Wear", "Accessories", "Office Supplies"],
     },
     {
-      image: "/Menu bar/Catalog/busines-industrial.avif",
+      image: image,
       title: "Business",
       subtitles: ["Business Attire", "Formal Wear", "Accessories", "Office Supplies"],
     },
     {
-      image: "/Menu bar/Catalog/busines-industrial.avif",
+      image: image,
       title: "Business",
       subtitles: ["Business Attire", "Formal Wear", "Accessories", "Office Supplies"],
     },
     {
-      image: "/Menu bar/Catalog/busines-industrial.avif",
+      image: image,
       title: "Business",
       subtitles: ["Business Attire", "Formal Wear", "Accessories", "Office Supplies"],
     },
     {
-      image: "/Menu bar/Catalog/busines-industrial.avif",
+      image: image,
       title: "Business",
       subtitles: ["Business Attire", "Formal Wear", "Accessories", "Office Supplies"],
     }
