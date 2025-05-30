@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Modal } from "flowbite-react";
+import {  Modal } from "flowbite-react";
 import { useState } from "react";
 
 export function Catalog() {
@@ -70,12 +70,12 @@ export function Catalog() {
         size="5xl"
       >
         <Modal.Header className="border-none ">
-          <div className="lg:grid lg:grid-cols-2  hidden  items-center " >
+          <div className="items-center hidden lg:grid lg:grid-cols-2 " >
            <div className="lg:grid lg:grid-cols-2 lg:gap-3"><h1 className="text-xl font-bold">Our Catalog <p className="text-xs font-normal">hide previews</p></h1></div> 
             <div className="flex items-center "> 
               <input 
                 type="search" 
-                className="border-0 outline-none border-b-2 px-2 py-1" 
+                className="px-2 py-1 border-0 border-b-2 outline-none" 
                 placeholder="Filter By Category" 
               />
               <img 
@@ -87,18 +87,18 @@ export function Catalog() {
           </div>
         </Modal.Header>
         <Modal.Body className="w-full p-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 overflow-auto touch-pan-y h-96">
+          <div className="grid grid-cols-1 gap-5 overflow-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 touch-pan-y h-96">
             {Catalogdata.map((item, index) => (
-              <div className="bg-white p-4 rounded-lg shadow-lg " key={index} >
+              <div className="p-4 bg-white rounded-lg shadow-lg " key={index} >
                 <div className="mb-4">
                   <img 
                     src={item.image} 
                     alt={item.title} 
-                    className="w-full h-48 object-cover rounded-md" 
+                    className="object-cover w-full h-48 rounded-md" 
                   />
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
+                  <h2 className="mb-2 text-lg font-semibold">{item.title}</h2>
                   {item.subtitles.map((subtitle, subIndex) => (
                     <p key={subIndex} className="text-sm text-gray-700">{subtitle}</p>
                   ))}
