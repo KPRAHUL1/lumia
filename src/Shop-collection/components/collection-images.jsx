@@ -11,7 +11,7 @@ export default function Collection_images() {
   const [value,setValue]=useState([])
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/api/socialmedia')
+    axios.get('https://lumia-prisma-backend.onrender.com/api/socialmedia')
     .then(res=>setValue(res.data))
     .catch(err => console.error("Error fetching data:", err))
   },[])
@@ -20,24 +20,24 @@ export default function Collection_images() {
   return (
     <>
       <div className="pt-10">
-        <div className=" flex flex-row flex-wrap justify-center xl:sticky xl:z-10 sticky rounded-full">
-          <a href="" className="bg-blue-600 rounded-full m-5 p-3 xl:absolute xl:top-32 md:top-8  lg:top-12 absolute top-12  transition duration-300 ease-in-out hover:scale-110 ">
-            <i className="fa-brands fa-instagram text-5xl text-white m-5 transition duration-300 ease-in-out hover:scale-110"></i></a>
+        <div className="sticky flex flex-row flex-wrap justify-center rounded-full  xl:sticky xl:z-10">
+          <a href="" className="absolute p-3 m-5 transition duration-300 ease-in-out bg-blue-600 rounded-full xl:absolute xl:top-32 md:top-8 lg:top-12 top-12 hover:scale-110 ">
+            <i className="m-5 text-5xl text-white transition duration-300 ease-in-out fa-brands fa-instagram hover:scale-110"></i></a>
         </div>
-        <div className="md:grid md:grid-cols-6 md:p-5 md:justify-items-center grid grid-cols-3 justify-items-center xl:hidden ">
+        <div className="grid grid-cols-3 md:grid md:grid-cols-6 md:p-5 md:justify-items-center justify-items-center xl:hidden ">
           <div className="col-span-1 p-4"> <img src={a} alt="" className="rounded-xl " /></div>
-          <div className="col-span-1 p-4" > <img src={b} alt="" className="rounded-xl  " /></div>
-          <div className="col-span-1 p-4"><img src={c} alt="" className="rounded-xl  " /></div>
-          <div className="col-span-1 p-4"> <img src={d} alt="" className="rounded-xl  " /></div>
-          <div className="col-span-1 p-4"><img src={e} alt="" className="rounded-xl  " /></div>
-          <div className="col-span-1 p-4"> <img src={f} alt="" className="rounded-xl  " /></div>
+          <div className="col-span-1 p-4" > <img src={b} alt="" className="rounded-xl " /></div>
+          <div className="col-span-1 p-4"><img src={c} alt="" className="rounded-xl " /></div>
+          <div className="col-span-1 p-4"> <img src={d} alt="" className="rounded-xl " /></div>
+          <div className="col-span-1 p-4"><img src={e} alt="" className="rounded-xl " /></div>
+          <div className="col-span-1 p-4"> <img src={f} alt="" className="rounded-xl " /></div>
         </div>
         
-          <div className="hidden xl:grid xl:grid-cols-8 m-5 gap-5">
+          <div className="hidden gap-5 m-5 xl:grid xl:grid-cols-8">
             {value.map((image, index) => (
-              <div key={index} className="overflow-hidden w-auto h-auto rounded-xl">
+              <div key={index} className="w-auto h-auto overflow-hidden rounded-xl">
                 <a href="#">
-                  <img src={`http://localhost:5000/${image.imagePath}`} alt={`Image ${index}`} className="rounded-xl transition duration-300 ease-in-out hover:scale-110" />
+                  <img src={`http://localhost:5000/${image.imagePath}`} alt={`Image ${index}`} className="transition duration-300 ease-in-out rounded-xl hover:scale-110" />
                 </a>
               </div>
             ))}
